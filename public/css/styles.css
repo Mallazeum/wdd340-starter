@@ -4,3 +4,82 @@
 *:after {
   box-sizing: border-box;
 }
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E3F2FD;
+  color: #081923;
+  
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0B1C2C;
+  color: #F0FAFF;
+  font-size: large;
+  margin-top: 0;
+}
+
+figure {
+  background-color: lightblue;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+}
+
+.delorean {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  top: 1rem;
+  left: 2rem;
+  background-color: rgba(100, 100, 120, 0.5);
+  color: lightblue;
+}
+
+.delorean a {
+  background-color: lightblue;
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+  align-self: center;
+  width: 50%;
+}
+
+.siteName {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.upgrades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.upgrades h2 {
+  grid-column: span 2;
+}
+
+#delImg {
+  margin-left: 3rem;
+  max-width: 85%;
+}
+
+@media (min-width: 37.5em) {
+  .grid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+}
